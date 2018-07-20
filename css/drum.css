@@ -1,0 +1,59 @@
+span {
+    display: block;
+    font-family: OpenSymbol, sans-serif;
+    color: #111111;
+    font-size: 14px;
+}
+
+.key {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #111111;
+    transition: .1s;
+    color: #111111;
+    margin-bottom: 5px;
+
+    -webkit-box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
+}
+
+kbd {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: OpenSymbol, sans-serif;
+}
+
+.playing {
+    transform: scale(1.1);
+    color: #ff5500;
+    border: 2px solid #ff5500;
+
+    --webkit-box-shadow: 0px 0px 32px 3px rgba(255, 85, 0, 1);
+    -moz-box-shadow: 0px 0px 32px 3px rgba(255, 85, 0, 1);
+    box-shadow: 0px 0px 32px 3px rgba(255, 85, 0, 1);
+}
+
+.drum-content {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.drum-content h3 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+.middle-keys {
+    margin-right: 63px;
+    margin-left: 63px;
+}
+
+.bottom-keys {
+    margin-left: 123px;
+    margin-right: 123px;
+}

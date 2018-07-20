@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/drum.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <title>Todo application</title>
+</head>
+<body>
+<header>
+    <div class="wrapper holder">
+        <div class="flex-container">
+            <div class="logo">
+                <h1><a href="index.html"><i class="fas fa-check-double"></i></a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tasks</a></li>
+                    <li><a href="#">Drum</a></li>
+                </ul>
+            </nav>
+
+            <form id="todoList">
+                <input type="text" placeholder="Enter your todo..." id="todoInput" onfocus="this.value=''">
+                <button type="submit"><i class="fas fa-plus"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="wrapper holder">
+        <div class="drum-content">
+            <div class="drum tab-content show">
+                <h3>Drum application</h3>
+
+                <div class="top-keys">
+                    <div class="flex-container">
+                        <div data-key="81" class="key">
+                            <kbd>Q</kbd>
+                            <span>Bass</span>
+                        </div>
+
+                        <div data-key="87" class="key">
+                            <kbd>W</kbd>
+                            <span>Beat</span>
+                        </div>
+
+                        <div data-key="69" class="key">
+                            <kbd>E</kbd>
+                            <span>Beat Box 1</span>
+                        </div>
+
+                        <div data-key="82" class="key">
+                            <kbd>R</kbd>
+                            <span>Beat Box 2</span>
+                        </div>
+
+                        <div data-key="84" class="key">
+                            <kbd>T</kbd>
+                            <span>Hi Stomp</span>
+                        </div>
+
+                        <div data-key="89" class="key">
+                            <kbd>Y</kbd>
+                            <span>Kick 1</span>
+                        </div>
+
+                        <div data-key="85" class="key">
+                            <kbd>U</kbd>
+                            <span>Kick 2</span>
+                        </div>
+
+                        <div data-key="73" class="key">
+                            <kbd>I</kbd>
+                            <span>Kick 3</span>
+                        </div>
+
+                        <div data-key="79" class="key">
+                            <kbd>O</kbd>
+                            <span>Kick 4</span>
+                        </div>
+
+                        <div data-key="80" class="key">
+                            <kbd>P</kbd>
+                            <span>Lil Jon Kick</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle-keys">
+                    <div class="flex-container">
+                        <div data-key="65" class="key">
+                            <kbd>A</kbd>
+                            <span>Clap</span>
+                        </div>
+
+                        <div data-key="83" class="key">
+                            <kbd>S</kbd>
+                            <span>Boom</span>
+                        </div>
+
+                        <div data-key="68" class="key">
+                            <kbd>D</kbd>
+                            <span>Hitaha</span>
+                        </div>
+
+                        <div data-key="70" class="key">
+                            <kbd>F</kbd>
+                            <span>Kick</span>
+                        </div>
+
+                        <div data-key="71" class="key">
+                            <kbd>G</kbd>
+                            <span>Openhat</span>
+                        </div>
+
+                        <div data-key="72" class="key">
+                            <kbd>H</kbd>
+                            <span>Ride</span>
+                        </div>
+
+                        <div data-key="74" class="key">
+                            <kbd>J</kbd>
+                            <span>Snare</span>
+                        </div>
+
+                        <div data-key="75" class="key">
+                            <kbd>K</kbd>
+                            <span>Tink</span>
+                        </div>
+
+                        <div data-key="76" class="key">
+                            <kbd>L</kbd>
+                            <span>Tom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-keys">
+                    <div class="flex-container">
+                        <div data-key="90" class="key">
+                            <kbd>Z</kbd>
+                            <span>Lol kick</span>
+                        </div>
+
+                        <div data-key="88" class="key">
+                            <kbd>X</kbd>
+                            <span>Loroom</span>
+                        </div>
+
+                        <div data-key="67" class="key">
+                            <kbd>C</kbd>
+                            <span>MSB</span>
+                        </div>
+
+                        <div data-key="86" class="key">
+                            <kbd>V</kbd>
+                            <span>Right Foot</span>
+                        </div>
+
+                        <div data-key="66" class="key">
+                            <kbd>B</kbd>
+                            <span>Room Kick</span>
+                        </div>
+
+                        <div data-key="78" class="key">
+                            <kbd>N</kbd>
+                            <span>Stab Kick</span>
+                        </div>
+
+                        <div data-key="77" class="key">
+                            <kbd>M</kbd>
+                            <span>TR Bass</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-sounds">
+                    <audio data-key="81" src="sounds/new/Bass%20Drum%20Sample-16440-Free-Loops.com.mp3"></audio>
+                    <audio data-key="87" src="sounds/new/beat.wav"></audio>
+                    <audio data-key="69" src="sounds/new/Beat%20Box%20Kick%201-6027-Free-Loops.com.mp3"></audio>
+                    <audio data-key="82" src="sounds/new/Beat%20Box%20Kick%202-3171-Free-Loops.com.mp3"></audio>
+                    <audio data-key="84" src="sounds/new/hi%20stomp.wav"></audio>
+                    <audio data-key="89" src="sounds/new/KICK2.WAV"></audio>
+                    <audio data-key="85" src="sounds/new/kick004.wav"></audio>
+                    <audio data-key="79" src="sounds/new/kick009.wav"></audio>
+                    <audio data-key="73" src="sounds/new/kick11.wav "></audio>
+                    <audio data-key="80" src="sounds/new/Lil%20Jon%20Kick-8241-Free-Loops.com.mp3"></audio>
+                </div>
+
+                <div class="middle-sounds">
+                    <audio data-key="65" src="sounds/clap.wav"></audio>
+                    <audio data-key="83" src="sounds/boom.wav"></audio>
+                    <audio data-key="68" src="sounds/hihat.wav"></audio>
+                    <audio data-key="70" src="sounds/kick.wav"></audio>
+                    <audio data-key="71" src="sounds/openhat.wav"></audio>
+                    <audio data-key="72" src="sounds/ride.wav"></audio>
+                    <audio data-key="74" src="sounds/snare.wav"></audio>
+                    <audio data-key="75" src="sounds/tink.wav"></audio>
+                    <audio data-key="76" src="sounds/tom.wav"></audio>
+                </div>
+
+                <div class="bottom-sounds">
+                    <audio data-key="90" src="sounds/new/lokik%20hl.wav"></audio>
+                    <audio data-key="88" src="sounds/new/loroomk2.wav"></audio>
+                    <audio data-key="67" src="sounds/new/msb9718.wav"></audio>
+                    <audio data-key="86" src="sounds/new/rightfoot-2.wav"></audio>
+                    <audio data-key="66" src="sounds/new/roomkik2.wav"></audio>
+                    <audio data-key="78" src="sounds/new/stab%20kik.wav"></audio>
+                    <audio data-key="77" src="sounds/new/TR606_BASS.wav"></audio>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="js/drum.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <title>Task page</title>
+</head>
+<body onload="getToDo()">
+
+<header>
+    <div class="wrapper holder">
+        <div class="flex-container">
+            <div class="logo">
+                <h1><a href="index.html"><i class="fas fa-check-double"></i></a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tasks</a></li>
+                    <li><a href="drum.html">Drum</a></li>
+                </ul>
+            </nav>
+
+            <form id="todoList">
+                <input type="text" placeholder="Enter your todo..." id="todoInput" onfocus="this.value=''">
+                <button type="submit"><i class="fas fa-plus"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="wrapper holder">
+        <div class="content">
+            <h2>Task page</h2>
+
+            <div class="left-block holder" id="tabs">
+                <div class="nav-panel">
+                    <nav>
+                        <ul>
+                            <li class="tab active">Shadow</li>
+                            <li class="tab">Scroll</li>
+                            <li class="tab">Flex</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="shadow tab-content">
+                    <h3><i>Shadow</i> mouse</h3>
+
+                    <span>Markup</span>
+                </div>
+
+
+                <div class="slide tab-content hidden-class">
+                    <h3>Slide in on <span>Scroll</span></h3>
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+                    <img src="img/img.jpg" alt="Img" class="right-position slide-in">
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+                    <img src="img/img.jpg" alt="Img" class="left-position slide-in">
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+                    <img src="img/img.jpg" alt="Img" class="right-position slide-in">
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+                    <img src="img/img.jpg" alt="Img" class="left-position slide-in">
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.</p>
+
+                </div>
+
+
+                <div class="flex tab-content hidden-class">
+                    <h3><span>Flex</span> gallery</h3>
+
+                    <div class="flex-container">
+
+                        <div class="flex-item"><p>My</p></div>
+                        <div class="flex-item"><p>Dear</p></div>
+                        <div class="flex-item"><p>Click</p></div>
+                        <div class="flex-item"><p>On</p></div>
+                        <div class="flex-item"><p>Me</p></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right-block">
+                <h3>Todo list</h3>
+                <div id="showToDoList">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/todo.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/shadow.js"></script>
+<script src="js/slide-in.js"></script>
+<script src="js/flex.js"></script>
+
+</body>
+</html>
