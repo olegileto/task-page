@@ -17,6 +17,11 @@ span {
     -webkit-box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
     box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.75);
+
+}
+
+.key:hover {
+    color: #ff5500;
 }
 
 kbd {
@@ -24,6 +29,8 @@ kbd {
     margin-top: 10px;
     font-size: 20px;
     font-family: OpenSymbol, sans-serif;
+
+
 }
 
 .playing {

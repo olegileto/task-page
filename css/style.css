@@ -211,7 +211,7 @@ input[type='text']:focus {
 
 button {
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 15px;
     width: 28px;
     height: 30px;
@@ -293,6 +293,7 @@ main .content .right-block {
     margin-top: 10px;
     background-color: #ffffff;
     border-radius: 5px;
+    border: 1px solid #dee5e6;
     padding: 15px;
     word-wrap: break-word;
 }
@@ -349,11 +350,13 @@ main .content .right-block #showToDoList a:hover {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
+
 }
 
 .shadow span {
     font-family: 'Oswald', sans-serif;
-    font-size: 80px;
+    font-size: 100px;
+    text-align: center;
 }
 
 .shadow h3 {
