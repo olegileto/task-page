@@ -76,14 +76,44 @@ table {
     color: #ff5500;
 }
 
+.banner {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+
+    background: rgba(248, 80, 50, 1);
+    background: -moz-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(255, 113, 0, 1) 0%, rgba(255, 60, 0, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248, 80, 50, 1)), color-stop(0%, rgba(241, 111, 92, 1)), color-stop(0%, rgba(255, 113, 0, 1)), color-stop(100%, rgba(255, 60, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(255, 113, 0, 1) 0%, rgba(255, 60, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(255, 113, 0, 1) 0%, rgba(255, 60, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(255, 113, 0, 1) 0%, rgba(255, 60, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(255, 113, 0, 1) 0%, rgba(255, 60, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#ff3c00', GradientType=0);
+}
+
+.banner .logo-banner {
+    margin-top: 110px;
+}
+
+.banner h2 {
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: #111111;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fixed header {
+    position: fixed;
+}
 
 header {
     z-index: 2;
     width: 100%;
     height: 45px;
-    position: fixed;
     top: 0;
-    left: 0;
+    position: relative;
     background-color: #333333;
     text-align: center;
     border-bottom: 1px solid #111111;
@@ -157,7 +187,7 @@ input[type='text'] {
     border: none;
     background-color: #e5e5e5;
     outline: none;
-    margin-top: 5px;
+    margin-top: 8px;
     border-radius: 5px;
     padding-left: 5px;
     font-family: 'Oswald', sans-serif;
@@ -171,6 +201,12 @@ input[type='text'] {
 
 input[type='text']:focus {
     background-color: #ffffff;
+}
+
+.drum-content {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dee5e6;
 }
 
 button {
@@ -198,25 +234,7 @@ button:hover {
 }
 
 main {
-    margin-top: 45px;
-}
-
-main .content {
-    padding-top: 20px;
-    width: 100%;
-    background-color: #ffffff;
-    border-left: 1px solid #dee5e6;
-    border-right: 1px solid #dee5e6;
-    border-bottom: 1px solid #dee5e6;
-}
-
-main .content h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 45px;
-    text-align: center;
-    border-radius: 0 0 5px 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 main .content .left-block {
@@ -256,9 +274,10 @@ main .content .left-block nav ul li a:hover {
     color: #ff5500;
 }
 
-main .content .left-block .drum {
+main .content .left-block m {
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
+
 }
 
 main .content .left-block .drum h3 {
@@ -454,7 +473,7 @@ main .content .right-block #showToDoList a:hover {
     min-height: 100vh;
 }
 
-.open {
+.flex .open {
     flex: 5;
     font-size: 2.6em;
 }

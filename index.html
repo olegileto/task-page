@@ -14,11 +14,18 @@
 </head>
 <body onload="getToDo()">
 
-<header>
+<div class="banner">
+    <div class="logo-banner">
+        <h2>Tasks page</h2>
+    </div>
+</div>
+
+<header id="main">
+
     <div class="wrapper holder">
         <div class="flex-container">
             <div class="logo">
-                <h1><a href="index.html"><i class="fas fa-check-double"></i></a></h1>
+                <h1><a href="index.html"><i class="fab fa-js-square"></i></a></h1>
             </div>
 
             <nav>
@@ -39,27 +46,18 @@
 <main>
     <div class="wrapper holder">
         <div class="content">
-            <h2>Task page</h2>
-
             <div class="left-block holder" id="tabs">
                 <div class="nav-panel">
                     <nav>
                         <ul>
-                            <li class="tab active">Shadow</li>
-                            <li class="tab">Scroll</li>
+                            <li class="tab active">Scroll</li>
+                            <li class="tab">Shadow</li>
                             <li class="tab">Flex</li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="shadow tab-content">
-                    <h3><i>Shadow</i> mouse</h3>
-
-                    <span>Markup</span>
-                </div>
-
-
-                <div class="slide tab-content hidden-class">
+                <div class="slide tab-content">
                     <h3>Slide in on <span>Scroll</span></h3>
 
                     <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
@@ -139,6 +137,11 @@
 
                 </div>
 
+                <div class="shadow tab-content hidden-class">
+                    <h3><i>Shadow</i> mouse</h3>
+
+                    <span>Markup</span>
+                </div>
 
                 <div class="flex tab-content hidden-class">
                     <h3><span>Flex</span> gallery</h3>
@@ -170,6 +173,7 @@
 <script src="js/shadow.js"></script>
 <script src="js/slide-in.js"></script>
 <script src="js/flex.js"></script>
+<script src="js/sticky-nav.js"></script>
 
 </body>
 </html>
