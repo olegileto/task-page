@@ -235,6 +235,7 @@ button:hover {
 
 main {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 main .content .left-block {
@@ -547,4 +548,70 @@ main .content .right-block #showToDoList a:hover {
 
 .checkbox h3 span {
     color: #ff5500;
+}
+
+.checkbox input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #ff5500;
+    display: inline-block;
+}
+
+.checkbox p {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #111111;
+}
+
+.ajax {
+    padding-top: 10px;
+}
+
+.ajax .suggest {
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.ajax h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.ajax h3 span {
+    color: #ff5500;
+}
+
+.ajax form input[type='text'] {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: #e5e5e5;
+    text-transform: capitalize;
+}
+
+.ajax ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #111111;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5500;
+    height: 10px;
+    cursor: pointer;
 }

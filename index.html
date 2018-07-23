@@ -56,6 +56,7 @@
                             <li class="tab">Flex</li>
                             <li class="tab">Clock</li>
                             <li class="tab">Checkbox</li>
+                            <li class="tab">Ajax</li>
                         </ul>
                     </nav>
                 </div>
@@ -175,16 +176,10 @@
                 </div>
 
                 <div class="checkbox tab-content hidden-class">
-                    <h3><span>Checkbox</span> in between</h3>
-
+                    <h3><span>Checkbox</span> in between (press Shift)</h3>
                     <div class="item">
                         <input type="checkbox">
                         <p>Create a new task</p>
-                    </div>
-
-                    <div class="item">
-                        <input type="checkbox">
-                        <p>Buy a car</p>
                     </div>
 
                     <div class="item">
@@ -199,6 +194,11 @@
 
                     <div class="item">
                         <input type="checkbox">
+                        <p>Buy a car</p>
+                    </div>
+
+                    <div class="item">
+                        <input type="checkbox">
                         <p>Google</p>
                     </div>
 
@@ -206,6 +206,17 @@
                         <input type="checkbox">
                         <p>Input</p>
                     </div>
+                </div>
+
+                <div class="ajax tab-content hidden-class">
+                    <h3><span>Ajax</span> and cities json file</h3>
+                    <form>
+                        <input type="text" class="search" placeholder="Find your city...">
+                    </form>
+
+                    <ul class="suggest">
+
+                    </ul>
                 </div>
             </div>
 
@@ -227,6 +238,7 @@
 <script src="js/sticky-nav.js"></script>
 <script src="js/clock.js"></script>
 <script src="js/checkbox.js"></script>
+<script src="js/ajax-cities.js"></script>
 
 </body>
 </html>
