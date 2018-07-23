@@ -480,3 +480,56 @@ main .content .right-block #showToDoList a:hover {
     flex: 5;
     font-size: 2.6em;
 }
+
+.clock {
+    padding-top: 10px;
+}
+
+.clock h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.clock h3 span {
+    color: #ff5500;
+}
+
+.clock .clock-shape {
+    width: 30rem;
+    height: 30rem;
+    border:20px solid #111111;
+    border-radius:50%;
+    margin:50px auto;
+    position: relative;
+    padding:2rem;
+}
+
+.clock .clock-shape .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.clock .hand {
+    width:50%;
+    height:6px;
+    background-color: #ff5500;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock .minute-hand {
+    background-color: #111111;
+}
+
+.clock .hour-hand {
+    left: 15%;
+    width: 35%;
+    background-color: #111111;
+}
