@@ -533,3 +533,18 @@ main .content .right-block #showToDoList a:hover {
     width: 35%;
     background-color: #111111;
 }
+
+.checkbox {
+    padding-top: 10px;
+}
+
+.checkbox h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.checkbox h3 span {
+    color: #ff5500;
+}
