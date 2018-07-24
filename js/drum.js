@@ -14,7 +14,7 @@ window.addEventListener('keydown', function (e) {
         this.classList.remove('playing');
     }
 
-    const keys = document.querySelectorAll('.key')
+    const keys = document.querySelectorAll('.key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
 });
