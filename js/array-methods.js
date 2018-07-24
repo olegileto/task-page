@@ -48,7 +48,7 @@ const totalYear = arrayTwo.reduce((total, array) => {
     return total + (array.passed - array.year)
 }, 0);
 
-const onlyNames =  arrayTwo.map(fullName => `<span>${fullName.firstName}</span> <span>${fullName.secondName}</span>`).join(", ");
+const onlyNames = arrayTwo.map(fullName => `<span>${fullName.firstName}</span> <span>${fullName.secondName}</span>`).join(", ");
 
 function showTotalYear() {
     document.querySelector('.total-year-show').innerHTML = `<span>${totalYear}</span>`;
