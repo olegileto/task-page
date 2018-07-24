@@ -62,9 +62,17 @@
                             <li class="tab">Array</li>
                             <li class="tab">Methods</li>
                             <li class="tab">Variables</li>
+                            <li class="toggle-panel">More Tasks</li>
                         </ul>
                     </nav>
+                    <div class="panel">
+                        <ul>
+                            <li class="tab">Call</li>
+                        </ul>
+                    </div>
                 </div>
+
+
 
                 <div class="slide tab-content">
                     <h3>Slide in on <span>Scroll</span></h3>
@@ -220,7 +228,6 @@
                     </form>
 
                     <ul class="suggest">
-
                     </ul>
                 </div>
 
@@ -252,9 +259,14 @@
                     </div>
 
                     <button class="total-year">Total year</button>
+                    <button class="only-names">Only names</button>
 
                     <div class="total-year-show">
                     </div>
+
+                    <div class="only-names-show">
+                    </div>
+
                 </div>
 
                 <div class="variables tab-content hidden-class">
@@ -267,12 +279,23 @@
                     <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
 
                     <label for="base">Base color</label>
-                    <input type="color" name="base" value="#ff5500">
+                    <input type="color" name="base" value="#ff5500"><br>
+
+                    <label for="right">Right/Left</label>
+                    <input type="range" name="right" max="300" min="-300" value="100" data-sizing="px">
+
+                    <label for="top">Top/Bottom</label>
+                    <input type="range" name="top" max="300" min="0" value="100" data-sizing="px">
+
+                    <label for="width">Width</label>
+                    <input type="range" name="width" max="100" min="0" value="70" data-sizing="%">
 
                     <div class="shape">
                         <img src="img/low-poly-basketbol-basketbolist-miach-igra.jpg" alt="Img">
                     </div>
                 </div>
+
+                <div class="call tab-content hidden-class"></div>
             </div>
 
 
@@ -297,6 +320,7 @@
 <script src="js/sort-array.js"></script>
 <script src="js/array-methods.js"></script>
 <script src="js/variables.js"></script>
+<script src="js/panel.js"></script>
 
 </body>
 </html>

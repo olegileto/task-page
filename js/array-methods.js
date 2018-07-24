@@ -36,6 +36,7 @@ const arrayTwo = [
 ];
 
 const totalYearButton = document.querySelector('.total-year');
+const onlyNamesButton = document.querySelector('.only-names');
 
 const fullNamesAndYears = arrayTwo.map(fullName => `<span>${fullName.firstName}</span> <span>${fullName.secondName}</span> <span>- year: ${fullName.year},</span> <span>passed: ${fullName.passed}</span><br>`).join(" ");
 
@@ -47,8 +48,15 @@ const totalYear = arrayTwo.reduce((total, array) => {
     return total + (array.passed - array.year)
 }, 0);
 
+const onlyNames =  arrayTwo.map(fullName => `<span>${fullName.firstName}</span> <span>${fullName.secondName}</span>`).join(", ");
+
 function showTotalYear() {
     document.querySelector('.total-year-show').innerHTML = `<span>${totalYear}</span>`;
 }
 
+function showOnlyNames() {
+    document.querySelector('.only-names-show').innerHTML = `<span>${onlyNames}</span><br>`;
+}
+
 totalYearButton.addEventListener('click', showTotalYear);
+onlyNamesButton.addEventListener('click', showOnlyNames);

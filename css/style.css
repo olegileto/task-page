@@ -246,6 +246,7 @@ main .content .left-block {
     border-radius: 5px;
     border: 1px solid #dee5e6;
     padding: 15px;
+    position: relative;
 }
 
 main .content .left-block nav {
@@ -741,24 +742,35 @@ main .content .right-block #showToDoList a:hover {
     --base: #ff5500;
     --spacing: 10px;
     --blur: 0px;
+    --top: 0px;
+    --right: 0px;
+    --width: 70%;
 }
 
 .variables .shape {
-    width: 600px;
-    height: 400px;
+    width: 100%px;
+    height: 600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .variables .shape img {
     margin-top: 30px;
-    width: 100%;
+    width: var(--width);
     background-color: var(--base);
     padding: var(--spacing);
     filter: blur(var(--blur));
+    position: absolute;
+    top: var(--top);
+    right: var(--right);
 }
 
 .variables .change-var {
     color: var(--base);
+}
+
+input[type=color] {
+    margin-bottom: 10px;
 }
 
 input[type=range] {
@@ -849,4 +861,45 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
     background: #111111;
+}
+
+main .content .left-block nav ul li:last-child {
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+main .content .left-block nav ul li:last-child:hover {
+    color: #ff5500;
+}
+
+.panel {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    color: #111111;
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 1px solid #dee5e6;
+    border-radius: 0 0 5px 5px;
+
+    -webkit-box-shadow: 10px 9px 5px -5px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 9px 5px -5px rgba(0,0,0,0.55);
+    box-shadow: 10px 9px 5px -5px rgba(0,0,0,0.55);
+}
+
+.panel li {
+    cursor: pointer;
+}
+
+.nav-panel {
+    position: relative;
 }
