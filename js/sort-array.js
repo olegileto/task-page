@@ -14,7 +14,7 @@ const sortedBands = bands.sort((a, b) => {
 });
 
 const clickToSortArray = () => {
-    innerBands.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
+    innerBands.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join(', ');
 };
 buttonToSortArray.addEventListener('click', clickToSortArray);
 
